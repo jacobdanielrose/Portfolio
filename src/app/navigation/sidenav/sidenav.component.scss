@@ -30,6 +30,7 @@
 
 .nav-item {
     width: 100%;
+    transition: var(--transition-speed);
 }
 
 .nav-item:last-child{
@@ -55,6 +56,14 @@
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
+}
+
+.nav-item:hover {
+  .nav-link {
+    svg {
+      fill: white;
+    }
+  }
 }
 
 .link-text {
@@ -88,6 +97,7 @@
     width: 100%;
     svg {
         transform: rotate(0deg);
+        color: white;
         transition: var(--transition-speed);
     }
 }

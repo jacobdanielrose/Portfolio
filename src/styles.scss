@@ -9,16 +9,20 @@
     font-family: 'Rajdhani', sans-serif;
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    --bg-primary: rgba(255, 0, 0, 0.342);
+    --bg-secondary: rgba(0, 0, 0, 0.8);
     --transition-speed: 600ms;
 }
 
 body {
-    color: black;
-    background-color: white;
+    color: var(--text-primary);
+    background-color: rgba(0, 0, 0, 0.89);
     margin: 0;
     padding: 0;
+}
+
+.logo-svg {
+    color: white;
 }
 
 body::-webkit-scrollbar {
@@ -30,5 +34,5 @@ body::-webkit-scrollbar-track {
 }
   
 body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: var(--bg-primary);
 }
