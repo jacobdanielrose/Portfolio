@@ -57,7 +57,7 @@ export class SceneComponent implements OnInit {
 
         // Animation
         mixer = new AnimationMixer(gltf.scene)
-        const action = mixer.clipAction(gltf.animations[2])
+        const action = mixer.clipAction(gltf.animations[0])
         action.play()
       }
     )
@@ -83,8 +83,8 @@ export class SceneComponent implements OnInit {
      * Sizes
      */
     const sizes = {
-      width: 800,
-      height: 500
+      width: 1000,
+      height: 800
     }
 
     window.addEventListener('resize', () => {
