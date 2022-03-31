@@ -3,6 +3,11 @@ img {
   height: 100%;
 }
 
-.container2 {
-  margin-top: 4px;
+.section-title h1::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--bg-primary);
+  margin: 4px 10px;
 }

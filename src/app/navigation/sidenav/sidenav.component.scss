@@ -115,6 +115,13 @@
   .nav-link {
     justify-content: center;
   }
+
+  .navbar:hover {
+    width: 100vw;
+    .link-text {
+      display: none;
+    }
+  }
 }
 
 /* Large screens */
