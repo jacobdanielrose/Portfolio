@@ -12,7 +12,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutSceneComponent } from './about/about-scene/about-scene.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +21,13 @@ import { AboutSceneComponent } from './about/about-scene/about-scene.component';
     PortfolioComponent,
     BlogComponent,
     ContactComponent,
-    AboutSceneComponent
+    AboutSceneComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
