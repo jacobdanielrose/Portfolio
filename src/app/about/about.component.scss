@@ -1,7 +1,16 @@
 img {
-  width: 100%;
-  height: 100%;
+  height: auto;
+  width: 30rem;
 }
+
+/* Small screens */
+@media only screen and (max-width: 960px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 .section-title h1::after {
   content: "";
