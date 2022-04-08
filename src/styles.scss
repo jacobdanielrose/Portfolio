@@ -3,6 +3,11 @@
 // google fonts
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-size: 16px;
   font-family: "Rajdhani", sans-serif;
@@ -10,12 +15,13 @@
   --text-secondary: #ececec;
   --bg-primary: rgb(117, 5, 5);
   --bg-secondary: rgb(0, 0, 0);
+  --bg-tertiary: rgba(0, 0, 0, 0.89);
   --transition-speed: 600ms;
 }
 
 body {
   color: var(--text-primary);
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: var(--bg-tertiary);
   margin: 0;
   padding: 0;
 }
