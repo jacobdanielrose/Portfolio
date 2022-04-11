@@ -7,7 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SceneComponent } from './scene/scene.component';
 
 const routes: Routes = [
-  { path: '', component: SceneComponent},
+  { path: '', component: AboutComponent },
   { path: 'about', component: AboutComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'blog', component: BlogComponent },
