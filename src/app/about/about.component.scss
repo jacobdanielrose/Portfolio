@@ -2,6 +2,15 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.about-text h3 {
+  display: inline;
+  border-bottom: 2px solid var(--bg-primary);
+}
+
+.about-text strong {
+  padding-right: 10px;
+}
+
 img {
   height: auto;
   width: 30rem;
@@ -19,6 +28,9 @@ img {
   }
 }
 
+.about-text {
+  height: auto !important;
+}
 
 .section-title h1::after {
   content: "";
@@ -39,7 +51,7 @@ ul {
 
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
   transition: var(--transition-speed);
   transition: 0.3s;
   width: 100%;
@@ -56,7 +68,6 @@ ul {
 // resume stylesheet
 .resume {
   width: 100%;
-  padding: 30px;
 }
 
 .resume:hover>div {
@@ -178,12 +189,54 @@ ul {
 }
 
 .work {
-  width: 48%;
+  width: 100%;
+  height: auto;
   padding: 15px;
-  margin: 0 4% 15px 0;
+  margin: 0 4% 0px 0;
 }
 
 .edu {
-  width: 48%;
+  width: 100%;
+  height: auto;
   padding: 15px;
+  margin: 0 4% 0px 0;
+}
+
+.cv-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+// download button animations
+
+a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  background: var(--bg-primary);
+  padding: 15px 60px;
+  border-radius: 10px;
+  transition: 0.3s all ease;
+  transform: scale(1);
+  animation: light 1.5s infinite alternate;
+}
+
+a:hover {
+  transform: scale(1.03);
+}
+
+@keyframes light {
+  0% {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(190, 77, 227, 0);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(190, 77, 227, 0);
+    box-shadow: 0px 0px 20px 0px rgba(190, 77, 227, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0px 0px 10px 0px white;
+    -moz-box-shadow: 0px 0px 10px 0px white;
+    box-shadow: 0px 0px 10px 0px white;
+  }
 }
